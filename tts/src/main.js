@@ -3,7 +3,7 @@ const audioPlayer = document.getElementById("audioPlayer");
 const statusMsg = document.getElementById("statusMsg");
 const inputBtn = document.getElementById("inputBtn");
 
-const API_KEY = "sk_3lj3owsl_luVud0uARUPoFYTIbGQhNBdQ";  // Use your actual key
+const API_KEY = import.meta.env.VITE_API_KEY;
 const API_URL = "https://api.sarvam.ai/text-to-speech";
 
 inputBox.addEventListener("keydown", async (e) => {
